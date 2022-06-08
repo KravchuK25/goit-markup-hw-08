@@ -1,0 +1,22 @@
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    
+    color: var(--two-accent-color);
+    background-color: var(--accent-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    transition: background-color
+    var(--transition-timing)
+    var(--transition-function);
+}

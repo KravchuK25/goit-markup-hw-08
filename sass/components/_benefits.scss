@@ -1,0 +1,35 @@
+.benefits{
+
+&__section{
+    display: flex;
+    
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+&__img{
+    width: 270px;
+    height: 120px;
+
+    margin-bottom: 30px;
+       
+    background-color: #F5F4FA;
+    border-radius: 4px;
+  }
+&__item{
+    width: 270px;
+}
+&__item:last-child{
+    margin-right: 0;
+
+}
+&__title{
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+&__text{
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+}
