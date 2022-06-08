@@ -1,42 +1,42 @@
-// .clients{
+.clients{
 
-// &__block{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+&__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     padding: 0;
-//     margin: 0;
-// }
-// &__item:not(:last-child){
-//     margin-right: 30px;
-// }
-// &__link{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 170px;
-//     height: 92px;
-//     color: #AFB1B8;
-//     border: 1px solid #AFB1B8;
-//     border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+&__item:not(:last-child){
+    margin-right: 30px;
+}
+&__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 
-//     transition:
-//     border-colorvar 
-//     var(--transition-timing)
-//     var(--transition-function), 
-//     color
-//     var(--transition-timing)
-//     var(--transition-function);
+    transition:
+    border-colorvar 
+    var(--transition-timing)
+    var(--transition-function), 
+    color
+    var(--transition-timing)
+    var(--transition-function);
    
-// }
-// &__link:hover,
-// &__link:focus {
-//     color: var(--accent-color);
-//     border-color: var(--accent-color);
+}
+&__link:hover,
+&__link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
    
-//     }
-// &__svg{
-//     fill: currentColor
-//     }
-// }
+    }
+&__svg{
+    fill: currentColor
+    }
+}
