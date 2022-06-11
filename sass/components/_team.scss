@@ -3,11 +3,15 @@
     background-color: #F5F4FA;
    }
 &__staff{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+    @include mq (tablet){
+        margin: -15px;
+        }
    
     
 }
@@ -19,6 +23,23 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
+
+    @include mq (mobile-only){
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+    @include mq (tablet-only){
+        flex-basis: calc(100% / 2 - 30px);
+         margin: 15px;  
+     }
+ 
+    @include mq (desktop){
+        &:not(:last-child){
+        margin-right: 30px;
+        }
+    }
+    
 
 }
 &__text{
