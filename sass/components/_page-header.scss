@@ -16,6 +16,11 @@
     margin-right: 95px;
 }
 }
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    }
 .site-nav{
     display: flex;
     margin-top: 0;
