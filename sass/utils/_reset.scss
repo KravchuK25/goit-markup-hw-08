@@ -1,8 +1,20 @@
 // .item{
-//     margin-right: 30px;
-// }
-// .item:last-child{
-//     margin-right: 0;
+//     @include mq (mobile-only) {
+//         &:not(:last-child){
+//             margin-bottom: 30px;
+//         }
+//     }
+//     @include mq (tablet-only){
+//         flex-basis: calc(100% / 2 - 30px);
+//          margin: 15px;  
+//      }
+ 
+//     @include mq (desktop){
+//         &:not(:last-child){
+//         margin-right: 30px;
+//         }
+//     }
+
 // }
 .title {
     font-weight: 700;
