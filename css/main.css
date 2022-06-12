@@ -30,15 +30,14 @@ ul {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
     padding-top: 60px;
@@ -91,6 +90,12 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .title {
@@ -502,6 +507,10 @@ ul {
 
 .checkbox-group__conditions {
   color: var(--accent-color);
+}
+
+.benefits__container {
+  padding-bottom: 0;
 }
 
 .benefits__section {

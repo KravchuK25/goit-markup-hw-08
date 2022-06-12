@@ -1,5 +1,7 @@
 .benefits{
-
+&__container{
+    padding-bottom: 0;
+}
 &__section{
     padding: 0;
     margin-bottom: 0;
@@ -28,7 +30,10 @@
     
    
 }
+
 &__item{
+
+    
     @include mq (mobile-only) {
         &:not(:last-child){
             margin-bottom: 30px;
