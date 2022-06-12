@@ -7,9 +7,12 @@
         margin-top: 0;
         margin-bottom: 0;
         display: flex;
+        justify-content: center;
+       
+    @include mq (not-desktop){
         flex-wrap: wrap;
-
-    @include mq (tablet){
+    }
+    @include mq (tablet-only){
         margin: -15px;
         }
    
@@ -39,9 +42,9 @@
         margin-right: 30px;
         }
     }
-    
 
 }
+
 &__text{
     margin-bottom: 16px;
 }
