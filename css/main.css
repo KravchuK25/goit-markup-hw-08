@@ -166,6 +166,15 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+@media screen and (max-width: 767px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .paig-header {
   padding: 0;
   background-color: var(--two-accent-color);
@@ -310,6 +319,69 @@ img {
 .auth-nav__svg {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.menu-button__svg {
+  fill: var(--two-text-color);
+}
+
+.menu-button__svg:hover, .menu-button__svg:focus {
+  fill: var(--accent-color);
+  outline: none;
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-mobile {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-mobile .menu-mobile-network {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu-mobile .menu-mobile-network__item:not(:last-child) {
+    margin: 0 10px;
+  }
+  .menu-mobile .menu-mobile-network__link {
+    color: var(--accent-color);
+  }
 }
 
 .hero {
@@ -618,14 +690,30 @@ img {
   color: var(--accent-color);
 }
 
-.benefits__container {
-  padding-bottom: 0;
+@media screen and (max-width: 767px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__container {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__section {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__section {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -684,6 +772,12 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {

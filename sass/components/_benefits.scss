@@ -1,12 +1,20 @@
 .benefits{
+    @include mq (mobile-only){
+        display: flex;
+    }
 &__container{
+    @include mq(desktop){
     padding-bottom: 0;
+    }
 }
 &__section{
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
 
+    @include mq (mobile-only){
+    width: 450px;
+}
 
     @include mq (tablet-only){
         display: flex;
@@ -59,6 +67,10 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @include mq (mobile-only) {
+        text-align: center;
+    }
  }
 &__text{
     margin-top: 0;

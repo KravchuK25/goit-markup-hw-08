@@ -1,0 +1,63 @@
+.menu-button{
+    @include mq (tablet) {
+        display: none;
+        }
+    }
+.menu-button{
+    @include mq (mobile-only){
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+       }
+
+
+&__svg{
+    fill: var(--two-text-color);
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+    outline: none;
+    }
+}
+
+
+&__icon-cross{
+    display: none;
+}
+&.is-open .menu-button__icon-cross{
+  display: block;
+}
+&.is-open .menu-button__icon-menu{
+   display: none;
+}
+}
+
+.menu-mobile{
+    text-align: center;
+    @include mq (tablet) {
+        display: none;
+        }
+    @include mq (mobile-only){
+        
+        .menu-mobile-network{
+            display: flex;
+            
+           
+            
+            &__item:not(:last-child){
+                margin:0 10px;
+              
+                
+                }
+            
+               &__link{
+                color: var(--accent-color);
+                
+                }
+        }
+    }
+  
+}
+

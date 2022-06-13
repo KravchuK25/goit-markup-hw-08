@@ -3,6 +3,11 @@
     align-items: center;
 
     border-bottom: 1px solid #ECECEC;
+    
+    @include mq(mobile-only){
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 .paig-header{
     padding: 0;

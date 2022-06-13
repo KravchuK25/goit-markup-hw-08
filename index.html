@@ -22,6 +22,48 @@
   <header class="paig-header">
     <div class="header__container">
       <a lang="en" class="logo paig-header__logo" href="./index.html">Web<span class="span">Studio</span></a>
+      <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+        <svg class="menu-button__svg" width="40px" height="40px" aria-label="перемикач мобільного меню">
+          <use class="menu-button__icon-menu" href="./icon/menu-mobil.svg#icon-menu"></use>
+          <use class="menu-button__icon-cross" href="./icon/menu-mobil.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="menu-mobile">
+        <ul class="menu-mobile-undressed">
+          <li class="menu-mobile-undressed__item">
+            <a href="./index.html" class="link menu-mobile-undressed__link">Студия</a>
+          </li>
+          <li class="menu-mobile-undressed__item">
+            <a href="./portfolio.html" class="link menu-mobile-undressed__link">Портфолио</a>
+          </li>
+          <li class="menu-mobile-undressed__item">
+            <a href="" class="link menu-mobile-undressed__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="menu-mobile-connection">
+          <li class="menu-mobile-connection__item">
+            <a class="link menu-mobile-connection__link" href="mailto:info@devstudio.com">info@devstudio.com
+          </li>
+          <li class="menu-mobile-connection__item">
+            <a class="link menu-mobile-connection__link" href="tel:+380961111111">+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-mobile-network">
+          <li class="menu-mobile-network__item ">
+            <a href="" class="link menu-mobile-network__link">Instagram</a>
+          </li>
+          <li class="menu-mobile-network__item">
+            <a href="" class="link menu-mobile-network__link">Twitter</a>
+          </li>
+          <li class="menu-mobile-network__item">
+            <a href="" class="link menu-mobile-network__link">Facebook</a>
+          </li>
+          <li class="menu-mobile-network__item">
+            <a href="" class="link menu-mobile-network__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
       <div class="menu-container">
         <nav class="nav">
           <ul class="site-nav">
@@ -54,7 +96,7 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button hero__button" type="button" data-modal-open>
@@ -110,19 +152,6 @@
           </form>
         </div>
       </div>
-      <script>
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
-        };
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-        }
-      </script>
     </section>
     <section class="benefits">
       <div class="container benefits__container">
@@ -498,7 +527,9 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
