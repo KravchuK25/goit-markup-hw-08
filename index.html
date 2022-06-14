@@ -22,13 +22,23 @@
   <header class="paig-header">
     <div class="header__container">
       <a lang="en" class="logo paig-header__logo" href="./index.html">Web<span class="span">Studio</span></a>
-      <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+
+
+      <button type="button" class="menu-button--open" aria-expanded="false" aria-controls="menu-mobile"
+        data-menu-button>
         <svg class="menu-button__svg" width="40px" height="40px" aria-label="перемикач мобільного меню">
           <use class="menu-button__icon-menu" href="./icon/menu-mobil.svg#icon-menu"></use>
-          <use class="menu-button__icon-cross" href="./icon/menu-mobil.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="menu-mobile">
+
+      <div class="menu-mobile is-hidden" id="menu-mobile" data-menu>
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-mobile" data-menu-batton>
+          <svg class="menu-button__svg" width="40px" height="40px" aria-label="перемикач мобільного меню">
+            <use class="menu-button__icon-cross" href="./icon/menu-mobil.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <ul class="menu-mobile-undressed">
           <li class="menu-mobile-undressed__item">
             <a href="./index.html" class="link menu-mobile-undressed__link">Студия</a>
@@ -64,6 +74,9 @@
           </li>
         </ul>
       </div>
+
+
+
       <div class="menu-container">
         <nav class="nav">
           <ul class="site-nav">
@@ -96,7 +109,7 @@
     </div>
   </header>
   <main>
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button hero__button" type="button" data-modal-open>
@@ -239,7 +252,7 @@
                          ./imager/team/1-708.jpg 708w,
                          ./imager/team/1-900.jpg 900w
                          " src="./imager/team/1-450.jpg" alt="людина"
-              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px 100vw"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
               loading="lazy" />
             <div class="team__desc">
               <h3 class="team__name">Игорь Демьяненко</h3>
@@ -284,7 +297,7 @@
                          ./imager/team/2-708.jpg 708w,
                          ./imager/team/2-900.jpg 900w
                          " src="./imager/team/2-450.jpg" alt="людина"
-              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px 100vw"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
               loading="lazy" />
             <div class="team__desc">
               <h3 class="team__name">Ольга Репина</h3>
@@ -329,7 +342,7 @@
                          ./imager/team/3-708.jpg 708w,
                          ./imager/team/3-900.jpg 900w
                          " src="./imager/team/3-450.jpg" alt="людина"
-              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px 100vw"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
               loading="lazy" />
             <div class="team__desc">
               <h3 class="team__name">Николай Тарасов</h3>
@@ -374,7 +387,7 @@
             ./imager/team/4-708.jpg 708w,
             ./imager/team/4-900.jpg 900w
             " src="./imager/team/4-450.jpg" alt="людина"
-              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px 100vw"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
               loading="lazy" />
             <div class="team__desc">
               <h3 class="team__name">Михаил Ермаков</h3>
@@ -527,9 +540,9 @@
         </form>
       </div>
     </div>
-  </footer> -->
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+  </footer>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
