@@ -1417,6 +1417,14 @@ img {
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-job {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-job__item:not(:last-child) {
     margin-bottom: 30px;

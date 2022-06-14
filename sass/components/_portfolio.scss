@@ -83,12 +83,16 @@
     justify-content: center;
     
     margin-top: -30px;
-
+    
+ @include mq (tablet-only){
+        justify-content: flex-start;
+        }
 
 @include mq (mobile-only){
     &__item:not(:last-child){
         margin-bottom: 30px;
     }
+   
 }
 @include mq (tablet-only){
     &__item{
