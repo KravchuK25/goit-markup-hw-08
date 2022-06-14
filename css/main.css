@@ -523,6 +523,13 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+
 .hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
 }
@@ -735,14 +742,6 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .benefits__container {
     padding-bottom: 0;
@@ -753,12 +752,6 @@ img {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .benefits__section {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1286,7 +1279,6 @@ img {
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
-  margin-right: 12px;
   padding: 18px 15px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1301,7 +1293,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-email__input {
-    width: 357px;
+    max-width: 357px;
+    margin-right: 12px;
   }
 }
 

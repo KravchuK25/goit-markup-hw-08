@@ -1,7 +1,7 @@
 .benefits{
-    @include mq (mobile-only){
-        display: flex;
-    }
+    // @include mq (mobile-only){
+    //     display: flex;
+    // }
 &__container{
     @include mq(desktop){
     padding-bottom: 0;
@@ -12,9 +12,9 @@
     margin-bottom: 0;
     margin-top: 0;
 
-    @include mq (mobile-only){
-    width: 450px;
-}
+//     @include mq (mobile-only){
+//     width: 450px;
+// }
 
     @include mq (tablet-only){
         display: flex;

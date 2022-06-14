@@ -55,7 +55,13 @@
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase 
+}
+@include mq (mobile-only){
+    &__title{
+        font-size: 26px;
+        line-height: 1.6;
+    }
 }
 
 &__button:hover,
