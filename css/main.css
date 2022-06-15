@@ -373,6 +373,15 @@ img {
     background-color: transparent;
     cursor: pointer;
   }
+  .menu-button__icon-cross {
+    display: none;
+  }
+  .menu-button.is-open .menu-button__icon-cross {
+    display: block;
+  }
+  .menu-button.is-open .menu-button__icon-menu {
+    display: none;
+  }
   .menu-button:hover, .menu-button:focus {
     fill: var(--accent-color);
   }

@@ -32,7 +32,7 @@
     transition-duration: 500ms;
     transition-timing-function: linear;
 
- 
+
 
 &.is-open{
  display: block;
@@ -46,6 +46,15 @@
     background-color: transparent;
     cursor: pointer;
 
+&__icon-cross{
+    display: none;
+}
+&.is-open .menu-button__icon-cross{
+    display: block;
+}
+&.is-open .menu-button__icon-menu{
+    display: none;
+}
 &:hover,
 &:focus{
     fill: var(--accent-color);
