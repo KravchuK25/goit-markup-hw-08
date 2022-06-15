@@ -32,10 +32,11 @@
     transition-duration: 500ms;
     transition-timing-function: linear;
 
-
+    z-index: 1;
 
 &.is-open{
  display: block;
+ 
 }
 
 }
@@ -45,7 +46,13 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 5;
+    z-index: 2;
+// ...................................
+&.is-open ~ .menu-mobile{
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: initial;
+}
 
 &__icon-cross{
     display: none;
@@ -60,15 +67,6 @@
 &:focus{
     fill: var(--accent-color);
 }
-
-// &__close{
-    
-//     position: absolute;
-
-//     top: 20px;
-//     right: 15px;
-
-// }
 }
 .menu-mobile-undressed{
     margin: 0;

@@ -66,13 +66,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header__container {
     width: 768px;
@@ -362,6 +355,7 @@ img {
             transition-duration: 500ms;
     -webkit-transition-timing-function: linear;
             transition-timing-function: linear;
+    z-index: 1;
   }
   .menu-mobile.is-open {
     display: block;
@@ -372,7 +366,13 @@ img {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 5;
+    z-index: 2;
+  }
+  .menu-button.is-open ~ .menu-mobile {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+    pointer-events: initial;
   }
   .menu-button__icon-cross {
     display: none;

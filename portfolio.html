@@ -25,7 +25,7 @@
         >Web<span class="span">Studio</span></a
       >
 
-      <button class="menu-button" type="button" data-modal-open>
+      <button class="menu-button" type="button" aria-controls="menu-mobile" data-menu-button>
         <svg
           class="menu-button__svg"
           width="40px"
@@ -33,21 +33,12 @@
           aria-label="перемикач мобільного меню"
         >
           <use class="menu-button__icon-menu" href="./icon/menu-mobil.svg#icon-menu"></use>
+          <use class="menu-button__icon-cross" href="./icon/menu-mobil.svg#icon-close"></use>
         </svg>
       </button>
     
 
-    <div class="menu-mobile is-hidden" data-modal>
-      <div class="menu">
-        <button class="menu-button menu-button__close" type="button" data-modal-close>
-          <svg
-            class="menu-button__svg"
-            width="40px"
-            height="40px"
-            aria-label="перемикач мобільного меню">
-            <use class="menu-button__icon-cross" href="./icon/menu-mobil.svg#icon-close"></use>
-          </svg>
-        </button>
+    <div class="menu-mobile" id="menu-mobile" data-menu>
 
         <div class="menu-mobile-undressed-conteiner">
           <ul class="menu-mobile-undressed">
@@ -127,7 +118,7 @@
         </li>
       </ul>
     </div> 
-    </div>
+    
   </header>
   <main>
     <section class="portfolio">
@@ -443,6 +434,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

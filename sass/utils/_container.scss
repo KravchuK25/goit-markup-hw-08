@@ -38,10 +38,10 @@
         @include mq (mobile) {
             width: 480px;
         }
-        @include mq (mobile-only) {
-            margin-left: 0;
-            margin-right: 0;
-        }
+        // @include mq (mobile-only) {
+        //     margin-left: 0;
+        //     margin-right: 0;
+        // }
      
         @include mq (tablet) {
             width: 768px;
