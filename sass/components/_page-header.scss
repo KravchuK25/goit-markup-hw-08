@@ -1,11 +1,14 @@
 .header__container{
-    position: relative;
+
+.nav{ 
     display: flex;
     align-items: center;
-
+}  
+   
     border-bottom: 1px solid #ECECEC;
     
     @include mq(mobile-only){
+       
         justify-content: space-between;
         width: 100%;
     }
