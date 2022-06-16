@@ -4,12 +4,10 @@
     padding-bottom: 60px;
     background-color:  #2F303A;
   
-   
     @include mq(desktop){
         display: flex;
         align-items: baseline;
     }
-    
 }
 
 
@@ -92,9 +90,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-
-     
-   
     }
 
 &__subtitle {
@@ -179,7 +174,6 @@
         width: 450px;
     }
     
-
     @include mq (desktop){
         width: 357px;
         margin-right: 12px;

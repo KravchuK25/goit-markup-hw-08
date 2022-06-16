@@ -24,7 +24,7 @@
     width: 100%;
 }
 
-    .menu-button{
+.menu-button{
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -49,14 +49,12 @@
 &:focus{
     fill: var(--accent-color);
 }
-
 }
 
 .menu-mobile{
     display: none;
     position: absolute;
-    
-  
+
     top: 100%;
     left: 0;
     width: 100%;
@@ -65,7 +63,6 @@
  display: block;
  
 }
-
 }
 .menu {
     position: fixed;
@@ -88,6 +85,7 @@
 .menu-mobile-undressed{
     margin: 0;
     padding: 0;
+
     &__link{
         font-size: 40px;
         color: var(--two-text-color);
@@ -96,6 +94,7 @@
     &__link:focus{
         color: var(--accent-color);
     }
+
 &__item:not(:last-child){
     margin-bottom: 32px;
 

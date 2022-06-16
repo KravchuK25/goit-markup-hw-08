@@ -14,9 +14,7 @@
     }
     @include mq (tablet-only){
         margin: -15px;
-        }
-   
-    
+    }
 }
 &__item{
     text-align: center;
@@ -35,7 +33,7 @@
     @include mq (tablet-only){
         flex-basis: calc(100% / 2 - 30px);
          margin: 15px;  
-     }
+    }
  
     @include mq (desktop){
         &:not(:last-child){
@@ -67,7 +65,6 @@
     justify-content: center;
     align-items: center;
 
-    
     padding-left: 0;
 
 &__item:not(:last-child){

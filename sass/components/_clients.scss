@@ -8,8 +8,6 @@
     padding: 0;
     margin: -15px;
     flex-wrap: wrap;
-    
-   
 }
 &__item{
     @include mq (mobile-only) {
@@ -25,7 +23,6 @@
         margin: 15px;
         }
     }
-
 
 &__link{
     display: flex;
