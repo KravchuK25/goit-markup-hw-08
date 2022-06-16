@@ -453,17 +453,12 @@ img {
   }
   .menu-mobile-network__item:not(:last-child) {
     margin-right: 10px;
+    padding-right: 10px;
+    border-right: rgba(33, 33, 33, 0.2);
   }
   .menu-mobile-network__link {
     font-size: 18px;
     color: var(--accent-color);
-  }
-  .menu-mobile-network__item:not(:last-child)::after {
-    content: ' ';
-    margin-left: 10px;
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
   }
 }
 
