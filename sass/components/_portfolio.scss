@@ -53,6 +53,8 @@
     var(--transition-timing)
     var(--transition-function);
 
+    cursor: pointer;
+
 }
 &__navigation:hover,
 &__navigation:focus {
@@ -121,11 +123,7 @@
         margin-bottom: 0;
     }
     }
-// &__img{
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-// }
+
 &__text-block{
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE;
