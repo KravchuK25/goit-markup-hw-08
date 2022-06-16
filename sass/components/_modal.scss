@@ -183,6 +183,11 @@
     font-weight: 400;
     line-height: 1.7;
 }
+@include mq (mobile-only){
+    &__agreements{
+    font-size: 12px;
+}
+}
 &__conditions{
     color: var(--accent-color);
 }

@@ -459,7 +459,7 @@ img {
     color: var(--accent-color);
   }
   .menu-mobile-network__item:not(:last-child)::after {
-    content: '';
+    content: ' ';
     margin-left: 10px;
     width: 1px;
     height: 22px;
@@ -780,6 +780,12 @@ img {
 .checkbox-group__agreements {
   font-weight: 400;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 767.98px) {
+  .checkbox-group__agreements {
+    font-size: 12px;
+  }
 }
 
 .checkbox-group__conditions {
