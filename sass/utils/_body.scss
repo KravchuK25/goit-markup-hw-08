@@ -8,3 +8,9 @@
     color: var(--one-text-color);
 } 
 
+body {
+    &.is-modal-shown,  
+    &.is-menu-shown {
+        overflow: hidden;  
+    }
+}

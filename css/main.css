@@ -23,6 +23,10 @@ ul {
   color: var(--one-text-color);
 }
 
+body.is-modal-shown, body.is-menu-shown {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
