@@ -5,25 +5,25 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include mq (mobile-only) {
+    // @include mq (mobile-only) {
         
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
     
      @include mq (tablet-only) {
          width: 768px;
     
-         padding-top: 60px;
-         padding-bottom: 60px;
+        //  padding-top: 60px;
+        //  padding-bottom: 60px;
     
      }
     
      @include mq (desktop) {
         width: 1200px;
         
-        padding-top: 94px;
-        padding-bottom: 94px;
+        // padding-top: 94px;
+        // padding-bottom: 94px;
         
      }
 }
@@ -38,10 +38,6 @@
         @include mq (mobile) {
             width: 480px;
         }
-        // @include mq (mobile-only) {
-        //     margin-left: 0;
-        //     margin-right: 0;
-        // }
      
         @include mq (tablet) {
             width: 768px;
@@ -52,3 +48,37 @@
         }
     
 }
+
+
+// .benefits,
+.distribution,
+.team,
+.clients,
+.portfolio
+{
+     padding-top: 60px;
+     padding-bottom: 60px;
+
+ @include mq (desktop) {
+  
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+ }
+}
+.footer{
+         padding-top: 60px;
+         padding-bottom: 60px;
+         background-color:  #2F303A;
+    
+    }
+.benefits{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include mq (desktop){
+        padding-bottom: 0px;
+    }
+}
+
+
+

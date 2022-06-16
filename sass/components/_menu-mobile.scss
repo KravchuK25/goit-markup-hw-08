@@ -128,26 +128,21 @@
     &__item:not(:last-child){
     margin-right: 10px;
     padding-right: 10px;
-    border-right: rgba(33,33,33,0.2);
-    
+    border-right: 1px solid rgba(33,33,33,0.2);
     }
+
     &__link{
     font-size: 18px;
     color: var(--accent-color);
     }
 
-    // &__item{
-    //     margin-right: 10px;
-    //     padding-right: 10px;
-    //     border-right: rgba(33,33,33,0.2)
-
-    // :not(:last-child)::after {
+    // &__item:not(:last-child)::after {
     //     content: ' ';
     //     display: inline-block;
-    //     margin-left: 10px;
+    //     margin-right: 10px;
     //     width: 1px;
     //     height: 22px;
     //     background-color: rgba(33,33,33,0.2)
-//      }
-}
+    //  }
+ }
 }
