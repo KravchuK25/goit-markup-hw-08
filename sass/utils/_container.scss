@@ -1,9 +1,11 @@
 .container{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+    margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
 
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 
      @include mq (tablet-only) {
          width: 768px;
@@ -14,12 +16,15 @@
      }
 }
 .header__container{
-  
-    padding-left: 15px;
-    padding-right: 15px;
     
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+  
+    // padding-left: 15px;
+    // padding-right: 15px;
+    
+    // margin-left: auto;
+    // margin-right: auto;
 
         @include mq (mobile) {
             width: 480px;
