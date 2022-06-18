@@ -24,8 +24,8 @@
    
     background-image: linear-gradient(rgba(47,48,58,0.4)),url('../../imager/hero/mobile.jpg');
 
-    @include mq (mobile){
-        background-image: linear-gradient(rgba(47,48,58,0.4)),url('../../imager/hero/mobile.jpg');
+    // @include mq (mobile){
+    //     background-image: linear-gradient(rgba(47,48,58,0.4)),url('../../imager/hero/mobile.jpg');
         @include mq (retina) {
             background-image: linear-gradient(rgba(47,48,58,0.4)),url('../../imager/hero/mobile@2x.jpg');
     }
