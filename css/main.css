@@ -173,8 +173,8 @@ img {
 .products__ellipsis {
   position: absolute;
   width: 26px;
-  top: 227px;
-  left: 130px;
+  top: 218px;
+  left: 127px;
 }
 
 .products__block {
@@ -201,5 +201,5 @@ img {
 .products__image {
   position: absolute;
   top: -138px;
-  left: 6px;
+  left: 0px;
 }/*# sourceMappingURL=main.css.map */
